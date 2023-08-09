@@ -14,11 +14,11 @@ import java.util.TimeZone;
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties.class)
 @EntityScan(basePackageClasses = {
-        PollsApplication.class,
+        CapstoneApplication.class,
         Jsr310JpaConverters.class
 })
 @Slf4j
-public class PollsApplication {
+public class CapstoneApplication {
 
     @PostConstruct
     void init() {
@@ -26,7 +26,7 @@ public class PollsApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(PollsApplication.class, args);
+        SpringApplication.run(CapstoneApplication.class, args);
         log.info("Started polling application...........");
     }
 }
