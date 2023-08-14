@@ -5,17 +5,14 @@ import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import vn.com.edu.fpt.capstoneproject.exception.AppException;
-import vn.com.edu.fpt.capstoneproject.exception.PollException;
 import vn.com.edu.fpt.capstoneproject.exception.ResourceNotFoundException;
 import vn.com.edu.fpt.capstoneproject.model.User;
-import vn.com.edu.fpt.capstoneproject.model.error.ErrorCode;
 import vn.com.edu.fpt.capstoneproject.repository.UserRepository;
 @Slf4j
 @Service
